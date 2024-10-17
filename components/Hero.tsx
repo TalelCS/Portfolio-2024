@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-transparent rounded-full blur-xl opacity-70 z-[-1]" />
 
           <img
-            src="/memoji-waving.png"
+            src="/memoji-waving.PNG"
             alt="Memoji of Talel waving"
             className="w-full h-full object-contain"
             style={{

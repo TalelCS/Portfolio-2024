@@ -117,7 +117,7 @@ export function AnimatedModalDemo() {
               </>
             ) : (
               <div className="flex flex-col justify-center items-center">
-                <img src="/memoji-call.png" alt="Memoji" className="w-40 h-40 rounded-full mb-20" />
+                <img src="/memoji-call.PNG" alt="Memoji" className="w-40 h-40 rounded-full mb-20" />
                 <VanishingText text="You'll hear from soon !" />
               </div>
             )}
