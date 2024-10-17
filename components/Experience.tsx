@@ -3,66 +3,231 @@ import Timeline from "./ui/Timeline";
 
 export function TimelineDemo() {
 
-  const SkeletonOne = () => {
+  const Skeleton1 = () => {
     return (
       <div>
         <p className="font-bold md:text-4xl text-xl text-white">
-          House in the woods
+          Première expérience avec l'IA
         </p>
         <p className="font-normal text-base text-white"></p>
         <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-          A serene and tranquil retreat, this house in the woods offers a peaceful
-          escape from the hustle and bustle of city life.
+          Ma première expérience de travail sur un projet d&apos;intelligence artificielle a marqué un tournant dans ma carrière. Ce fut une aventure passionnante où j&apos;ai découvert les possibilités infinies que l&apos;IA peut offrir pour résoudre des problèmes complexes.
         </p>
       </div>
     );
   };
   
-  const SkeletonTwo = () => {
+  const Skeleton2 = () => {
     return (
       <div>
         <p className="font-bold md:text-4xl text-xl text-white">
-          House above the clouds
+          Interaction avec des clients internationaux
         </p>
         <p className="font-normal text-base text-white"></p>
         <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-          Perched high above the world, this house offers breathtaking views and a
-          unique living experience. It&apos;s a place where the sky meets home,
-          and tranquility is a way of life.
+          Travailler avec des entreprises internationales m&apos;a permis de comprendre les nuances culturelles et les exigences spécifiques, enrichissant ainsi mon expérience professionnelle et mes compétences en communication.
         </p>
       </div>
     );
   };
   
-  const SkeletonThree = () => {
+  const Skeleton3 = () => {
     return (
       <div>
         <p className="font-bold md:text-4xl text-xl text-white">
-          Greens all over
+          Amélioration de la réponse du chatbot
         </p>
         <p className="font-normal text-base text-white"></p>
         <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-          A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-          perfect place to relax, unwind, and enjoy life.
+          L&apos;amélioration significative de 63 % que j&apos;ai réalisée dans le temps de réponse du chatbot témoigne de mon engagement à optimiser les performances et à offrir une expérience utilisateur fluide.
         </p>
       </div>
     );
   };
   
-  const SkeletonFour = () => {
+  const Skeleton4 = () => {
     return (
       <div>
         <p className="font-bold md:text-4xl text-xl text-white">
-          Rivers are serene
+          Développement et déploiement avec DevOps
         </p>
         <p className="font-normal text-base text-white"></p>
         <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-          A house by the river is a place of peace and tranquility. It&apos;s the
-          perfect place to relax, unwind, and enjoy life.
+          J&apos;ai intégré des pratiques DevOps pour assurer un cycle de vie de développement fluide, permettant ainsi des mises à jour et des déploiements rapides et efficaces tout au long du projet.
         </p>
       </div>
     );
   };
+
+  const Skeleton5 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Gestion des délais
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          Faire face aux délais serrés a été un défi constant, mais cela m&apos;a permis de développer des compétences en gestion du temps et de prioriser les tâches pour livrer les projets dans les délais impartis.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton6 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Gestion financière
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          La gestion efficace des finances de mes projets a été cruciale. J&apos;ai appris à établir un budget, à suivre les dépenses et à maximiser les ressources pour assurer la rentabilité des projets.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton7 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Projets réels
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          Travailler sur des projets réels m&apos;a permis d&apos;interagir directement avec des clients et de comprendre leurs besoins, ce qui a enrichi mon expérience et m&apos;a appris à adapter mes solutions.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton8 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Gestion du temps
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          L&apos;équilibre entre les projets et mes études a nécessité une gestion du temps rigoureuse. J&apos;ai appris à planifier et à organiser mes tâches pour atteindre mes objectifs académiques et professionnels.
+        </p>
+      </div>
+    );
+  };
+
+  const Skeleton9 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Collaboration avec des développeurs expérimentés
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          Travailler aux côtés de développeurs expérimentés m&apos;a permis d&apos;acquérir des compétences précieuses en matière de collaboration et de communication, enrichissant ainsi mon approche du développement.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton10 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Lecture de documentation
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          Ma capacité à lire et à comprendre la documentation d&apos;Appsmith a été essentielle pour développer des applications rapidement et efficacement, démontrant mon engagement à apprendre de nouvelles technologies.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton11 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Mon premier jour au travail
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          Mon premier jour au travail a été un moment mémorable, où j&apos;ai ressenti une excitation mêlée à un léger stress, mais cela a été le début d&apos;une aventure enrichissante dans le développement d&apos;applications.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton12 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Travailler en équipe dans un bureau
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          L&apos;expérience de travailler dans un bureau avec d&apos;autres professionnels a renforcé mon sens du travail d&apos;équipe et m&apos;a permis d&apos;échanger des idées et des solutions dans un environnement dynamique.
+        </p>
+      </div>
+    );
+  };
+
+  const Skeleton13 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Gestion de grandes bases de données
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          Travailler sur des bases de données volumineuses m&apos;a permis de développer des compétences en gestion des données, garantissant un stockage et une récupération efficaces pour un système de notifications performant.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton14 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Ma première expérience de travail
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          Cette expérience a marqué le début de ma carrière professionnelle, où j&apos;ai pu mettre en pratique mes compétences en développement dans un environnement réel et dynamique.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton15 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Capacité à travailler à distance
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          J&apos;ai développé mes compétences en télétravail, me permettant de collaborer efficacement avec l&apos;équipe tout en maintenant un équilibre entre la vie professionnelle et personnelle.
+        </p>
+      </div>
+    );
+  };
+  
+  const Skeleton16 = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Technologies de communication
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          J&apos;ai utilisé des technologies modernes telles que l&apos;envoi d&apos;alertes par e-mail et SMS pour garantir une communication efficace avec les clients, renforçant ainsi la réactivité du système.
+        </p>
+      </div>
+    );
+  };
+  
+  
 
   const data = [
     {
@@ -73,28 +238,28 @@ export function TimelineDemo() {
       cards: [
         {
           id: 1,
-          content: <SkeletonOne />,
+          content: <Skeleton1 />,
           className: "md:col-span-2",
           thumbnail:
             "/ai.jpg",
         },
         {
           id: 2,
-          content: <SkeletonTwo />,
+          content: <Skeleton2 />,
           className: "col-span-1",
           thumbnail:
             "/international.jpg",
         },
         {
           id: 3,
-          content: <SkeletonThree />,
+          content: <Skeleton3 />,
           className: "col-span-1",
           thumbnail:
-            "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "/devops.jpg",
         },
         {
           id: 4,
-          content: <SkeletonFour />,
+          content: <Skeleton4 />,
           className: "md:col-span-2",
           thumbnail:
             "/63.png",
@@ -128,28 +293,28 @@ export function TimelineDemo() {
       cards: [
         {
           id: 1,
-          content: <SkeletonOne />,
+          content: <Skeleton5 />,
           className: "md:col-span-2",
           thumbnail:
             "/deadline.jpg",
         },
         {
           id: 2,
-          content: <SkeletonTwo />,
+          content: <Skeleton6 />,
           className: "col-span-1",
           thumbnail:
             "/money.jpg",
         },
         {
           id: 3,
-          content: <SkeletonThree />,
+          content: <Skeleton7 />,
           className: "col-span-1",
           thumbnail:
             "/real-world.jpg",
         },
         {
           id: 4,
-          content: <SkeletonFour />,
+          content: <Skeleton8 />,
           className: "md:col-span-2",
           thumbnail:
             "/time.jpg",
@@ -186,28 +351,28 @@ export function TimelineDemo() {
       cards: [
         {
           id: 1,
-          content: <SkeletonOne />,
+          content: <Skeleton9 />,
           className: "md:col-span-2",
           thumbnail:
             "/collab.jpg",
         },
         {
           id: 2,
-          content: <SkeletonTwo />,
+          content: <Skeleton10 />,
           className: "col-span-1",
           thumbnail:
             "/documentation.jpg",
         },
         {
           id: 3,
-          content: <SkeletonThree />,
+          content: <Skeleton11 />,
           className: "col-span-1",
           thumbnail:
             "/firstday.JPG",
         },
         {
           id: 4,
-          content: <SkeletonFour />,
+          content: <Skeleton12 />,
           className: "md:col-span-2",
           thumbnail:
             "office.jpg",
@@ -238,28 +403,28 @@ export function TimelineDemo() {
       cards: [
         {
           id: 1,
-          content: <SkeletonOne />,
+          content: <Skeleton13 />,
           className: "md:col-span-2",
           thumbnail:
             "/large-dataset.png",
         },
         {
           id: 2,
-          content: <SkeletonTwo />,
+          content: <Skeleton14 />,
           className: "col-span-1",
           thumbnail:
             "/1st.jpg",
         },
         {
           id: 3,
-          content: <SkeletonThree />,
+          content: <Skeleton15 />,
           className: "col-span-1",
           thumbnail:
             "/remote.png",
         },
         {
           id: 4,
-          content: <SkeletonFour />,
+          content: <Skeleton16 />,
           className: "md:col-span-2",
           thumbnail:
             "email-sms.jpg",
