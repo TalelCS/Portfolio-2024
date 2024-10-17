@@ -49,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Developing a Booking System for a Celebrity Hair Salon in Dubai",
+      title: "Developing a reservations system SaaS",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -82,7 +82,7 @@ export const navItems = [
       id: 2,
       title: "Company showcase Website",
       des: "Discover Fares Confection's website, A market leader in the textile fabrications",
-      img: "/fares.png",
+      img: "/fares.PNG",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://faresconfection.com",
     }

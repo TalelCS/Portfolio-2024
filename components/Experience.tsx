@@ -103,16 +103,19 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            • J’ai développé un questionnaire en ligne dynamique avec des scénarios multiples et une base de données flexible, utilisant JavaScript et Appsmit.
+            • J’ai développé un chatbot utilisant l’assistant OpenAI, avec une fonctionnalité de diffusion des réponses via WebSocket, basé sur une base de connaissances téléchargée.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            • J’ai créé un tableau de bord interactif pour centraliser les données des enquêtes en ligne, intégrant des visualisations claires et une mise à jour en temps réel des statistiques.
+            • J’ai implémenté des fonctionnalités de lecture en haute voix et de saisie vocale pour permettre une interaction plus naturelle avec le chatbot, en intégrant des API de synthèse vocale et de reconnaissance vocale.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            • J’ai exploré et lu la documentation de l’outil Appsmith pour la création d’applications web et mobiles, en mettant en avant la rapidité de développement et la flexibilité de la plateforme.
+            • J’ai amélioré le tableau de bord du chatbot en mettant en place un système d'authentification et en optimisant l’interface pour offrir une meilleure expérience utilisateur.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
-            • J’ai collaboré avec des développeurs expérimentés pour acquérir des connaissances et des compétences en matière de travail d’équipe et de communication efficace.
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            • J’ai utilisé Markdown pour formater les réponses du chatbot, ce qui a permis d'offrir des réponses bien structurées, avec des éléments tels que des listes, des titres et des liens cliquables pour une meilleure lisibilité.
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            • J’ai conteneurisé le projet en utilisant Docker, permettant le déploiement sur n'importe quelle machine, et j’ai vérifié la compatibilité mobile en effectuant des tests avec Ngrok.
           </p>
         </div>
       ),
@@ -121,7 +124,7 @@ export function TimelineDemo() {
       title: "Freelance",
       date: "Winter 2023",
       position: "Freelancer",
-      logo: "/mdweb.png",
+      logo: "/home.jpg",
       cards: [
         {
           id: 1,
@@ -155,16 +158,22 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            • J’ai développé un questionnaire en ligne dynamique avec des scénarios multiples et une base de données flexible, utilisant JavaScript et Appsmit.
+            • J’ai dirigé le développement d'un site vitrine pour Fares Confection, une entreprise textile, en créant une interface utilisateur attrayante et intuitive qui met en valeur les produits et services de l'entreprise.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            • J’ai créé un tableau de bord interactif pour centraliser les données des enquêtes en ligne, intégrant des visualisations claires et une mise à jour en temps réel des statistiques.
+            • J’ai intégré des fonctionnalités avancées sur le site, y compris un système de gestion des produits et un formulaire de contact, facilitant ainsi l'interaction avec les clients potentiels.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            • J’ai exploré et lu la documentation de l’outil Appsmith pour la création d’applications web et mobiles, en mettant en avant la rapidité de développement et la flexibilité de la plateforme.
+            • J’ai collaboré étroitement avec le client pour définir ses besoins et attentes, en veillant à ce que le produit final réponde à ses exigences tout en respectant les délais impartis.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
-            • J’ai collaboré avec des développeurs expérimentés pour acquérir des connaissances et des compétences en matière de travail d’équipe et de communication efficace.
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            • Pour l'événement de JCI, j’ai conçu et développé un système de réservation en ligne, permettant aux participants de s'inscrire facilement à l'événement et d'effectuer des paiements sécurisés.
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            • J’ai mis en place une base de données robuste pour gérer les inscriptions et les paiements, garantissant ainsi la sécurité et l'intégrité des données des utilisateurs.
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            • J’ai assuré le déploiement et la maintenance continue des deux projets, en fournissant un support technique et en effectuant des mises à jour régulières pour améliorer les performances et la sécurité.
           </p>
         </div>
       ),
@@ -194,7 +203,7 @@ export function TimelineDemo() {
           content: <SkeletonThree />,
           className: "col-span-1",
           thumbnail:
-            "/remote.png",
+            "/firstday.JPG",
         },
         {
           id: 4,
