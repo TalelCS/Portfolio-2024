@@ -40,6 +40,7 @@ const Clients = () => {
           className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
         >
           <InfiniteMovingCards
+            key={language}
             items={translations.testimonials}
             direction="right"
             speed="slow"

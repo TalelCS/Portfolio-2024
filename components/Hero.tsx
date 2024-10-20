@@ -1,4 +1,5 @@
 "use client"
+import React from "react";
 import { FaLocationArrow, FaDownload } from 'react-icons/fa';
 import MagicButton from './ui/MagicButton';
 import { Spotlight } from './ui/Spotlight';
@@ -11,7 +12,6 @@ import { useLanguage } from '@/app/languageContext';
 
 const Hero = () => {
   const { language } = useLanguage();
-
   const translations = language === 'en' ? eng : fr;
 
   return (

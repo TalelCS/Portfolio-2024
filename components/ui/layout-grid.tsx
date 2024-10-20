@@ -12,7 +12,7 @@ type Card = {
   thumbnail: string;
 };
 
-export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
+export const LayoutGrid = ({ cards, language }: { cards: Card[], language: string }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
@@ -27,7 +27,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div key={language} className="w-full h-full grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -108,11 +108,10 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         className="relative px-8 pb-4 z-[70]"
       >
         <div>
-          <p className="font-bold md:text-4xl text-xl text-white">
+          <p className="font-bold md:text-2xl text-xl text-white">
             {selected?.contentTitle}
           </p>
-          <p className="font-normal text-base text-white"></p>
-          <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          <p className="font-normal text-sm my-4 max-w-lg text-neutral-200">
             {selected?.contentParagraph}
           </p>
         </div>

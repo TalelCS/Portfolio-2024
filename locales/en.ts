@@ -121,7 +121,7 @@ export const eng = {
                 { text: "• I enhanced the chatbot's dashboard by implementing an authentication system and optimizing the interface for a better user experience." },
                 { text: "• I used Markdown to format the chatbot's responses, allowing for well-structured replies with elements like lists, headings, and clickable links for better readability." },
                 { text: "• I containerized the project using Docker, allowing deployment on any machine, and I checked mobile compatibility by testing with Ngrok." }
-            ]
+            ],
         },
         {
             title: "Freelance",
@@ -189,7 +189,7 @@ export const eng = {
               {
                 id: 3,
                 contentTitle: "My First Day at Work",
-                contentParagraph: "My first day at work was a memorable moment, where I felt a mix of excitement and slight stress, but it marked the beginning of an enriching adventure in application development. Working on real projects allowed me to interact directly with clients and understand their needs, which enriched my experience and taught me to adapt my solutions.",
+                contentParagraph: "My first day at work was a memorable moment, where I felt a mix of excitement and slight stress, but it marked the beginning of an enriching adventure in application development.",
                 className: "col-span-1",
                 thumbnail: "/firstday.JPG",
               },

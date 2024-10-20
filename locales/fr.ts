@@ -199,7 +199,7 @@ export const fr = {
         {
           id: 3,
           contentTitle: "Mon premier jour au travail",
-          contentParagraph:"Mon premier jour au travail a été un moment mémorable, où j'ai ressenti une excitation mêlée à un léger stress, mais cela a été le début d'une aventure enrichissante dans le développement d'applications.Travailler sur des projets réels m'a permis d'interagir directement avec des clients et de comprendre leurs besoins, ce qui a enrichi mon expérience et m'a appris à adapter mes solutions.",
+          contentParagraph:"Mon premier jour au travail a été un moment mémorable, où j'ai ressenti une excitation mêlée à un léger stress, mais cela a été le début d'une aventure enrichissante dans le développement d'applications.",
           className: "col-span-1",
           thumbnail:
             "/firstday.JPG",

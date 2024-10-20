@@ -37,6 +37,7 @@ const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const [forceReload, setForceReload] = useState(false);
   const { language } = useLanguage();
   const sectionTitle = () => {
     if (language === 'en') {
@@ -59,7 +60,8 @@ const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       const rect = ref.current.getBoundingClientRect();
       setHeight(rect.height);
     }
-  }, [ref]);
+    setForceReload((prev) => !prev);
+  }, [ref,language]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -128,7 +130,7 @@ const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                   <div className="flex justify-between items-center">
                     <CardItem translateZ="100" className="w-full mt-4 pointer-events-auto">
                       <div className="h-[70vh] py-5 px-5 w-full">
-                        <LayoutGrid cards={item.cards} />
+                        <LayoutGrid key={language} language={language} cards={item.cards} />
                       </div>
                     </CardItem>
                   </div>
