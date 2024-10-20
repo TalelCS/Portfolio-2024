@@ -6,7 +6,8 @@ import Image from "next/image";
 
 type Card = {
   id: number;
-  content: JSX.Element | React.ReactNode | string;
+  contentTitle: string;
+  contentParagraph: string;
   className: string;
   thumbnail: string;
 };
@@ -106,7 +107,15 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         }}
         className="relative px-8 pb-4 z-[70]"
       >
-        {selected?.content}
+        <div>
+          <p className="font-bold md:text-4xl text-xl text-white">
+            {selected?.contentTitle}
+          </p>
+          <p className="font-normal text-base text-white"></p>
+          <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+            {selected?.contentParagraph}
+          </p>
+        </div>
       </motion.div>
     </div>
   );

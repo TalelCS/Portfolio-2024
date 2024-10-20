@@ -1,10 +1,19 @@
+"use client"
 import { FaLocationArrow, FaDownload } from 'react-icons/fa';
 import MagicButton from './ui/MagicButton';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { socialMedia } from '@/data';
+import { eng } from '@/locales/en';
+import { fr } from '@/locales/fr';
+import { useLanguage } from '@/app/languageContext';
+
 
 const Hero = () => {
+  const { language } = useLanguage();
+
+  const translations = language === 'en' ? eng : fr;
+
   return (
     <div className='pb-20 pt-36 relative'>
       <div>
@@ -17,12 +26,9 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      {/* Main Hero Content */}
       <div className="flex flex-col md:flex-row items-center justify-center relative my-20 z-10 max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] mx-auto">
 
-        {/* Memoji Image on Top for Mobile */}
         <div className="relative w-32 h-32 md:w-80 md:h-80 mb-6 md:mb-28 md:ml-10 flex-shrink-0 md:mr-8 order-1 md:order-2">
-          {/* Soft Gradient Glow behind Memoji */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-transparent rounded-full blur-xl opacity-70 z-[-1]" />
 
           <img
@@ -36,20 +42,18 @@ const Hero = () => {
           />
         </div>
 
-        {/* Title and Text (Aligned Center for Mobile, Left for Desktop) */}
         <div className="flex flex-col items-center md:items-start justify-center text-center md:text-left mb-8 md:mb-0 md:mr-8 order-2 md:order-1">
           <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 mb-2">
-            Hi there! Let&apos;s Build Together!
+            {translations.HeroItems[0].firstText}
           </h2>
           <TextGenerateEffect
             className="text-[32px] md:text-5xl lg:text-6xl"
-            words="I'm Talel Galai"
+            words={translations.HeroItems[0].secondText}
           />
           <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-            I’m a passionate Software Engineering Student based in Tunisia, and I love creating impactful digital experiences.
+            {translations.HeroItems[0].thirdText}
           </p>
 
-          {/* Social Media Icons */}
           <div className="flex items-center md:gap-3 gap-4 mt-3 md:mt-4">
             {socialMedia.map((profile) => (
               <a 
@@ -65,21 +69,18 @@ const Hero = () => {
             ))}
           </div>
 
-          {/* Buttons (Centered for Mobile, Left-Aligned for Desktop) */}
           <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start mt-4">
-            {/* Button 1: Download Resume */}
             <a href="/Talel_Resume.pdf" download="Talel_Resume.pdf">
               <MagicButton
-                title="Grab my resume"
+                title={translations.HeroItems[0].firstButtonText}
                 icon={<FaDownload />}
                 position="right"
               />
             </a>
 
-            {/* Button 2: Show my work */}
             <a href="#projects">
               <MagicButton
-                title="Check out my work"
+                title={translations.HeroItems[0].secondButtonText}
                 icon={<FaLocationArrow />}
                 position="right"
               />

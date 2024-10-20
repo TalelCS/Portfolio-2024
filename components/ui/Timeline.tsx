@@ -10,12 +10,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { LayoutGrid } from "../ui/layout-grid";
+import { useLanguage } from '@/app/languageContext';
 
 interface Card {
   id: number;
-  content: React.ReactNode;
+  contentTitle: string;
+  contentParagraph: string;
   className: string;
   thumbnail: string;
+}
+
+interface Content {
+  text : string;
 }
 
 interface TimelineEntry {
@@ -23,7 +29,7 @@ interface TimelineEntry {
   date: string;
   position: string;
   logo: string;
-  content: React.ReactNode;
+  contents: Content[];
   cards: Card[];
 }
 
@@ -31,6 +37,22 @@ const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const { language } = useLanguage();
+  const sectionTitle = () => {
+    if (language === 'en') {
+      return (
+        <>
+          My <span className='text-purple'>Work Experience</span>
+        </>
+      );
+    } else {
+      return (
+        <>
+          Mon <span className='text-purple'>Expérience Professionnelle</span>
+        </>
+      );
+    }
+  };
 
   useEffect(() => {
     if (ref.current) {
@@ -51,7 +73,7 @@ const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full font-sans md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h1 className="heading">
-          My <span className="text-purple">Work Experience</span>
+          {sectionTitle()}
         </h1>
       </div>
 
@@ -95,7 +117,13 @@ const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     translateZ="60"
                     className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 max-w-full mt-2"
                   >
-                    {item.content}
+                    {item.contents.map((element , index) => (
+                      <div key={index}>
+                        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+                          {element.text}
+                        </p>
+                    </div>
+                    ))}
                   </CardItem>
                   <div className="flex justify-between items-center">
                     <CardItem translateZ="100" className="w-full mt-4 pointer-events-auto">

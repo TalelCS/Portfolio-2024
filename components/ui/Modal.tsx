@@ -10,12 +10,14 @@ import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 import { VanishingText } from "./placeholders-and-vanish-input";
+import { useLanguage } from '@/app/languageContext';
 
 export function AnimatedModalDemo() {
   const [formVisible, setFormVisible] = useState(true);
   const [status, setStatus] = useState("");
   const [animating, setAnimating] = useState(false);
   const form = useRef<HTMLFormElement>(null);
+  const { language } = useLanguage();
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -63,7 +65,7 @@ export function AnimatedModalDemo() {
       <Modal>
         <ModalTrigger className="group/modal-btn">
           <MagicButton
-            title="Let's get in touch"
+            title={language === 'en' ? "Let's get in touch" : "Prenons contact"}
             icon={<FaLocationArrow />}
             position="right"
           />
@@ -73,26 +75,26 @@ export function AnimatedModalDemo() {
             {formVisible ? (
               <>
                 <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
-                  Contact Me
+                  {language === 'en' ? "Contact Me" : "Contactez Moi"}
                 </h4>
                 <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
                   <input
                     type="text"
                     name="from_name"
-                    placeholder="Your Name"
+                    placeholder={language === 'en' ? "Your Name" : "Votre Nom"}
                     required
                     className="px-4 py-2 border border-gray-300 rounded-md"
                   />
                   <input
                     type="email"
                     name="user_email"
-                    placeholder="Your Email"
+                    placeholder={language === 'en' ? "Your Email" : "Votre Email"}
                     required
                     className="px-4 py-2 border border-gray-300 rounded-md"
                   />
                   <textarea
                     name="message"
-                    placeholder="Your Message"
+                    placeholder={language === 'en' ? "Your Message" : "Votre Message"}
                     required
                     className="px-4 py-2 border border-gray-300 rounded-md"
                     rows={5}
@@ -104,13 +106,13 @@ export function AnimatedModalDemo() {
                       onClick={() => setFormVisible(false)}
                       className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm"
                     >
-                      Cancel
+                      {language === 'en' ? "Cancel" : "Annuler"}
                     </button>
                     <button
                       type="submit"
                       className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black"
                     >
-                      Send
+                      {language === 'en' ? "Send" : "Envoyer"}
                     </button>
                   </div>
                 </form>
@@ -118,7 +120,7 @@ export function AnimatedModalDemo() {
             ) : (
               <div className="flex flex-col justify-center items-center">
                 <img src="/memoji-call.PNG" alt="Memoji" className="w-40 h-40 rounded-full mb-20" />
-                <VanishingText text="You'll hear from soon !" />
+                <VanishingText text={language === 'en' ? "You'll hear from soon !" : "Vous aurez bientôt des nouvelles !"} />
               </div>
             )}
           </ModalContent>

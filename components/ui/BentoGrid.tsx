@@ -70,15 +70,10 @@ export const BentoGridItem = ({
       {id === 1 ? (
     <div className="p-5 lg:p-10 h-full flex flex-col justify-center relative">
       <h2 className="font-bold text-xl lg:text-3xl text-white mb-4">
-        About Me
+        {title}
       </h2>
       <p className="font-sans text-sm lg:text-lg text-[#c1c2d3]">
-        I am a passionate web developer with experience in building scalable web
-        applications using modern technologies like React.js, Next.js, and Node.js. 
-        I love working on both front-end and back-end projects, continuously 
-        improving my skills and keeping up with the latest trends in the tech 
-        industry. In my free time, I enjoy learning new frameworks and contributing 
-        to open-source projects.
+        {description}
       </p>
 
       {/* Floating Memoji Image */}

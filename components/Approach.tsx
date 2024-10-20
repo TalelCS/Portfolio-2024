@@ -3,21 +3,44 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { eng } from '@/locales/en';
+import { fr } from '@/locales/fr';
+import { useLanguage } from '@/app/languageContext';
 
 const Approach = () => {
+  const { language } = useLanguage();
+
+  const translations = language === 'en' ? eng : fr;
+
+  const sectionTitle = () => {
+    if (language === 'en') {
+      return (
+        <>
+          My <span className="text-purple">approach</span>
+        </>
+      );
+    } else {
+      return (
+        <>
+          Mon <span className="text-purple">approche</span>
+        </>
+      );
+    }
+  };
+
   return (
     <section className="w-full py-20">
         <h1 className="heading">
-            My <span className="text-purple">approach</span>
+            {sectionTitle()}
         </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-        <Card title="Planning & Strategy" icon={<AceternityIcon order="Phase 1"/>} description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.">
+        <Card title={translations.approachItems[0].firstphaseTitle} icon={<AceternityIcon order="Phase 1"/>} description={translations.approachItems[0].firstphaseDescription}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Development & Progress Update" icon={<AceternityIcon order="Phase 2"/>} description= "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to ploished code, I keep you updated every step of the way.">
+        <Card title={translations.approachItems[0].secondphaseTitle} icon={<AceternityIcon order="Phase 2"/>} description= {translations.approachItems[0].secondphaseDescription}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -28,7 +51,7 @@ const Approach = () => {
             dotSize={2}
           />
         </Card>
-        <Card title="Development & Launch" icon={<AceternityIcon order="Phase 3"/>} description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up.">
+        <Card title={translations.approachItems[0].thirdphaseTitle} icon={<AceternityIcon order="Phase 3"/>} description={translations.approachItems[0].thirdphaseDescription}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
