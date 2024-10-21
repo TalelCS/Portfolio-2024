@@ -18,8 +18,8 @@ export const FloatingNav = ({
     name: string;
     link: string;
     icon?: JSX.Element;
-  }[]; 
-  className?: string; 
+  }[];
+  className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
   const { language, setLanguage } = useLanguage();
@@ -57,7 +57,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
+          "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-5 py-3 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
           className
         )}
         style={{
@@ -89,11 +89,13 @@ export const FloatingNav = ({
             <img
               src={language === "fr" ? "/fr.png" : "/en.png"}
               alt="Language"
-              className="w-6 h-6"
+              className="w-6 h-5 rounded-sm"
             />
           </button>
           {isOpen && (
-            <div className="absolute right-0 mt-2 w-20 bg-white dark:bg-black rounded-lg shadow-lg">
+            <div
+              className="absolute right-0 mt-2 w-full sm:w-20 bg-white dark:bg-black rounded-lg shadow-lg"
+            >
               <button
                 className="flex items-center justify-center w-full p-2"
                 onClick={() => {
@@ -101,16 +103,16 @@ export const FloatingNav = ({
                   setIsOpen(false);
                 }}
               >
-                <img src="/en.png" alt="English" className="w-6 h-6" />
+                <img src="/en.png" alt="English" className="w-6 h-5 rounded-sm" />
               </button>
               <button
                 className="flex items-center justify-center w-full p-2"
                 onClick={() => {
-                  setLanguage('fr')
+                  setLanguage('fr');
                   setIsOpen(false);
                 }}
               >
-                <img src="/fr.png" alt="Français" className="w-6 h-6" />
+                <img src="/fr.png" alt="Français" className="w-6 h-5 rounded-sm" />
               </button>
             </div>
           )}
