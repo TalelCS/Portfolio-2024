@@ -272,7 +272,7 @@ export const fr = {
       id: 1,
       title: "Système de réservation d'événements",
       des: "Découvrez l'événement de JCI Metline avec ce site web, comprenant un système de réservation et un tableau de bord administrateur.",
-      img: "/assises.png",
+      img: "/assises.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://assises-du-printemps-zone-b-2k24.tn",
     },
@@ -280,7 +280,7 @@ export const fr = {
       id: 2,
       title: "Site vitrine d'entreprise",
       des: "Découvrez le site de Fares Confection, un leader du marché dans la fabrication de textiles.",
-      img: "/fares.PNG",
+      img: "/fares.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://faresconfection.com",
     }

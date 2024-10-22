@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { LanguageProvider } from './languageContext';
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/public/logo.ico" />
+        <link rel="icon" href="/logo.ico" />
       </head>
       <body className={inter.className}>
         <LanguageProvider>
+          <Analytics/>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

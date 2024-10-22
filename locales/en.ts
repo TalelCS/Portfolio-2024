@@ -256,7 +256,7 @@ export const eng = {
             id: 1,
             title: "Event Booking System",
             des: "Experience the JCI Metline's Event with this website, featuring a reservation system, and an admin dashboard.",
-            img: "/assises.png",
+            img: "/assises.jpg",
             iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
             link: "https://assises-du-printemps-zone-b-2k24.tn"
         },
@@ -264,7 +264,7 @@ export const eng = {
             id: 2,
             title: "Company showcase Website",
             des: "Discover Fares Confection's website, A market leader in the textile fabrications",
-            img: "/fares.PNG",
+            img: "/fares.jpg",
             iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
             link: "https://faresconfection.com"
         }
