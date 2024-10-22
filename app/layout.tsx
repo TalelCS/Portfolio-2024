@@ -4,7 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { LanguageProvider } from './languageContext';
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/public/logo.ico" />
+      </head>
       <body className={inter.className}>
         <LanguageProvider>
           <ThemeProvider
