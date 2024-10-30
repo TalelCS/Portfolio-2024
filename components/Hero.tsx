@@ -70,7 +70,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start mt-4">
-            <a href="/Talel_Resume.pdf" download="Talel_Resume.pdf">
+            <a href="/Talel_Galai_Resume_2024.pdf" download="Talel_Galai_Resume_2024.pdf">
               <MagicButton
                 title={translations.HeroItems[0].firstButtonText}
                 icon={<FaDownload />}

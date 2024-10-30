@@ -39,9 +39,8 @@ const RecentProjects = () => {
                 <PinContainer title={link} href={link}>
                     <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10">
                         <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                            <img src="/bg.png" alt="bg-img"/>
+                            <img src={img} alt={title} className="z-10 absolute bottom-0 rounded-sm object-cover"/>
                         </div>
-                        <img src={img} alt={title} className="z-10 absolute bottom-0 rounded-sm" />
                     </div>
                     <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                         {title}
@@ -54,7 +53,7 @@ const RecentProjects = () => {
                         <div className="flex items-center">
                             {iconLists.map((icon, index) => (
                                 <div key={icon} className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{transform: `translateX(-${5 * index * 2}px)`}}>
-                                    <img src={icon} alt={icon} className="p-2"/>
+                                    <img src={icon} alt={icon} className="p-2" />
                                 </div>
                             ))}
                         </div>
